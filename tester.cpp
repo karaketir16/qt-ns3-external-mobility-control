@@ -8,9 +8,9 @@ Tester::Tester(QObject *parent) : QObject(parent)
 
     my_socket->bind(QHostAddress::LocalHost, CONTROLLER_PORT);
 
-    randgen = new QRandomGenerator(202020);
+    randgen = new QRandomGenerator(212121);
 
-    bool test1 = false;
+    bool test1 = true;
 
     if(test1){   //test1
         QObject::connect(my_socket, &QUdpSocket::readyRead, this, &Tester::dataReceived_test_1);

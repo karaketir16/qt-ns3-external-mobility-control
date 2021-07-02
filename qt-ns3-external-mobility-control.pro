@@ -27,3 +27,6 @@ HEADERS += \
     tester.h
 
 INCLUDEPATH += $${NS3PATH}/scratch/external-mobility-test/
+
+STATECHARTS += \
+    test.scxml
